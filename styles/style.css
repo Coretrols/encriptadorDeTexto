@@ -1,0 +1,187 @@
+ 
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    /* flex-wrap: wrap; */
+}
+.header__menu_Imagen{
+    width: 150px;
+    height: auto;
+    padding: 20px;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));    
+
+}
+.header__menu_titulo{
+    display: flex;    
+    overflow: hidden; /* Oculta el texto que no está visible */
+    white-space: nowrap; /* Evita el salto de línea */
+    border-right: 3px solid #0A3871; /* Cursor de escritura */
+    font-family: 'Courier New', Courier, monospace;; /* Estilo de fuente monoespaciada */
+    font-size: 100%; /* Tamaño de la fuente, ajusta según tu diseño */
+    color:#0A3871;
+    font-weight: 400;
+    width: 0; /* Inicialmente el ancho es 0 */
+    animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+body{
+    background: linear-gradient(to right, #006eff4F, #1100ff4F);
+    /* background:repeating-linear-gradient(to right, #006eff4F, #1100ff4F 30%); */
+    /* background: conic-gradient(from 45deg, red, yellow, lime, aqua, blue, magenta,red); */
+}
+.encriptador{
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#textDesencriptado{
+    color: #0A3871;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    border: 1px solid #495057;  
+    border-radius: 10px;  
+    padding: 2%;
+}
+.encriptador__contenido{
+
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 200;
+    align-items: center;
+    margin: 5%;
+    
+}
+.encriptador__contenido__areaDeTexto{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    flex-wrap: wrap;
+}
+#textDesencriptado{
+    flex-grow: 1;
+    flex-basis: 200;
+    
+
+}
+.encriptador__contenido_precaucion{
+    padding: 0;
+    opacity: 80%;
+    margin: 3%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #495057;
+
+}
+.encriptador__desencriptado{
+    /* margin: 10% 10% 10% 10%; */
+    width: 400px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: conic-gradient(from 45deg, #FF000043, #FFFF0043, #00FF0043, #00FFFF43, #0000FF43, #FF00FF43,#FF000043);
+    border: 5px double #F6F6F6;
+    border-radius: 20px;
+    flex-grow: 1;
+    flex-basis: 200;    
+    margin: 5%;
+}
+.encriptador__desencriptado__informativo{
+    margin: 4% 4%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.encriptador__contenido__areaDeTexto{
+    display: flex;
+    align-items: center;
+}
+#textEncriptado{
+    display: flex;
+    border-radius: 10px;
+    padding: 2%;
+    background: #F6F6F69A;
+    margin: 2%;
+}
+.encriptador__contenido__button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 200;   
+    padding: 3%;
+    
+}
+#textEncriptado{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 200;
+    flex-wrap: wrap;  
+}
+
+.encriptador__contenido_botones{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: #141414;
+    color: #F6F6F6;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    position: relative;
+}
+#btnCopiar{
+    display: none;
+}
+.encriptador__contenido_botones:hover{
+    background:#141414A3;
+}
+.encriptador__desencriptado__texto{
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 200;   
+    flex-wrap: wrap;
+}
+.encriptador__desencriptado__boton{
+    
+    margin-bottom: 50px;
+}
+.header__menu_Imagen2{
+    width: 200px;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.6));    
+}
+
+
+footer{
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background:#00000025;
+}
+
+

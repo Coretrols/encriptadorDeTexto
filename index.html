@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+           <img class="header__menu_Imagen" src="./assets/pngwing.png" alt="Imagen de un papiro encriptado"> 
+           <h1 class="header__menu_titulo">Encriptador de Texto</h1>       
+        </nav>
+    </header>
+    <main class="encriptador">
+        <section class="encriptador__contenido">
+            <div class="encriptador__contenido__areaDeTexto">
+                <textarea name="Texto-encriptado" rows="10" cols="50" id="textDesencriptado" placeholder="Ingrese el texto a desencriptar" ></textarea>
+
+            </div>
+            <div class="encriptador__contenido_precaucion">
+                <img src="./assets/precaución.png">
+                <label for="lblprecaucion">Solo letras minusculas y sin acentos</label>
+                <label id="lblprecaucion" class="label_1"></label>
+                
+                <!-- <h1 class="encriptador__contenido__informativo">Solo letras minusculas y sin acentos</h1> -->
+            </div>
+            <div class="encriptador__contenido__button" id="botones">               
+                <button type="button" id="btnEncriptar" class="encriptador__contenido_botones" onclick="hidenElement()"><span>Encriptar</span></button>
+                <button type="button" id="btnDesencriptar" class="encriptador__contenido_botones" onclick="watchElement()">Desencriptar</button> 
+            </div>
+        </section>
+        <section  class="encriptador__desencriptado">
+                <div class="encriptador__desencriptado__imagen">
+                    <img class="header__menu_Imagen2" src="./assets/charmander.png.png" id="imgCharmander" alt="Foto de charmander">
+                </div>
+                <div class="encriptador__desencriptado__informativo">
+                    <h1 id="hValidacion"><strong>No se ha encontrado ningun mensaje</strong>
+                     Ingresa el texto que desees encriptar o Desencriptar</h1>
+                </div>
+                <div class="encriptador__desencriptado__texto">
+                    <textarea name="Texto-Desencriptado" rows="10" cols="50" id="textEncriptado"></textarea>
+                </div>
+                <div class="encriptador__desencriptado__boton" id="botones">
+                    <button type="button" id="btnCopiar" class="encriptador__contenido_botones" onclick="copiarTexto()">Copiar</button>
+                </div>
+        </section>
+        <section clas="encriptador__botones">
+            <div class="encriptador__botones__encriptar">
+                
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div>Desarrolando por Steven Murillo</div>
+        <div>Junior Developer</div>
+        <div>2024</div>
+        </footer>
+        <script src="./assets/app.js"></script>
+</body>
+</html>
